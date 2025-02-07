@@ -73,8 +73,9 @@ function backtrace(paths, start, end){
 const start = [0, 0];
 const end = [7, 7];
 const paths = knightMoves(start, end);
+const path = backtrace(paths, start, end);
 
-console.log(`Path from ${start} to ${end}: ${backtrace(paths, start, end)}`);
+console.log(`Path from ${start} to ${end} in ${path.length} moves: ${path}`);
 
 
 
